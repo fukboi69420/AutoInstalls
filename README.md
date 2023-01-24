@@ -2,6 +2,7 @@
 a set of .sh files to automate installation of programs and run them for you
 # usage
 "sh PROGRAM.sh" and most of the work should be done for you
+or "sudo PROGRAM.sh" for best results, use if commands need root
 
 this program is a set of commands that can help you automate the installation of certain programs and skips most of the steps, that you would otherwise have to do. this can be helpful for new users and people and or for peopel who just want things to ge done for them.
 
