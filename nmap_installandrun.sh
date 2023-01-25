@@ -6,3 +6,5 @@ make install
 sudo apt-get install -y nmap
 nmap --help
 nmap scanme.nmap.org
+cd nmap
+ls
