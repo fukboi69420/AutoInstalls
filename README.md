@@ -12,4 +12,14 @@ The commands that you are used to automate the installation of programs are:
 
 2. dpkg -i: This command is used to install a package from a .deb file. It is used to install packages from third-party repositories
 
-3. s git clone: this will copy a repository into your terminal and depending on what .sh package you install, it will do that for you
+3. git clone: this will copy a repository into your terminal and depending on what .sh package you install, it will do that for you
+
+4. wget "url" this will copy over a file or folder that is downloaded and put into your terminal for use.
+
+5. sudo: This command is used to run the program with root privileges. This is necessary when you are trying to install or modify system files.
+
+6. make: This command is used to compile the source code. This is mainly used for compiling programs written in C and C++.
+
+7. make install installs the program by copying the binaries into the correct places as defined by ./configure and the Makefile
+
+8. ./configure is a script responsible for getting ready to build the software on your specific system.
