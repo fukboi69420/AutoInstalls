@@ -19,7 +19,7 @@ cd ..
 cd nmap
 ./configure
 make && make install
-sudo apt-get install nmap
+sudo apt-get install -y nmap
 cd ..
 cd sherlock
 python3 -m pip install -r requirements.txt
@@ -31,3 +31,9 @@ cd ..
 cd DaProfiler
 python3 -m pip install -r requirements.txt
 pip install -r requirements.txt
+cd ..
+cd AutoInstalls
+cd Piesint
+pip3 install -r reqs.txt
+python3 -m pip install -r reqs.txt
+python3 Piesint.py
