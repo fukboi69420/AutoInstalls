@@ -3,5 +3,6 @@ sudo rm -rf Anubis DaProfiler holeheInfoga maigret nexfil nmap sherlock theHarve
 rm -rf Piesint
 cd
 clear
+rm -rf holehe infoga 
 ls
 
