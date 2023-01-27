@@ -1,6 +1,6 @@
 # AutoInstalls
 a set of .sh files to automate installation of programs and run them for you
-# usage
+# commands
 "sh PROGRAM.sh" and most of the work should be done for you
 or "sudo PROGRAM.sh" for best results, use if commands need root
 
@@ -23,3 +23,8 @@ The commands that you are used to automate the installation of programs are:
 7. make install installs the program by copying the binaries into the correct places as defined by ./configure and the Makefile
 
 8. ./configure is a script responsible for getting ready to build the software on your specific system.
+
+# usage
+
+pretty simple all you are doing is executing .sh files with sh PROGRAM.sh or chmod +x -> ./PROGRAM.sh
+Chmod is a command that allows you to change the permissions on a file or directory. It can be used to give certain users access to certain files or directories, or to restrict access to certain files or directories.
