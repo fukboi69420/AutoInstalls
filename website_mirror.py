@@ -1,33 +1,81 @@
-#import the necessary modules
-import os
-import requests
-from bs4 import BeautifulSoup
+# writes the trace output and log file content to console directly
+'DEBUG': False  
 
-#set the website url
-url = "http://example.com"
+# make zip archive of the downloaded content
+'MAKE_ARCHIVE': True
 
-#make a request to the url
-response = requests.get(url)
+# delete the project folder after making zip archive of it
+'CLEAN_UP': False
 
-#check response code
-if response.status_code == 200:
-    print('The website is available')
+# which parser to use when parsing pages
+# for speed choose 'html.parser' (will crack some webpages)
+# for exact webpage copy choose 'html5lib' (a little slow)
+# or you can leave it to default 'lxml' (balanced)
+'PARSER' : 'lxml'
 
-#parse the response data
-data = BeautifulSoup(response.text, 'html.parser')
+# to download css file or not
+'LOAD_CSS': True
 
-#create a folder to store the mirrored website files
-os.mkdir('example_mirror')
+# to download images or not
+'LOAD_IMAGES': True
 
-#get all the links from the website
-links = data.find_all('a')
+# to download js file or not
+'LOAD_JAVASCRIPT': True
 
-#loop through the links and download the source
-for link in links:
-    link_url = link.get('href')
-    #make request to the link
-    link_response = requests.get(link_url)
-    #get the file name
-    file_name = link_url.split('/')[-1]
-    #write the file to the folder
-    with open(os.path.join('example_mirror', file_name), 'wb')
+# to download every page available inside 
+# url tree turn this True
+# NOTE: This could overload the server and could 
+# result in ip ban
+'COPY_ALL': False
+
+# to overwrite the existing files if found
+'OVER_WRITE': False
+
+# list of allowed file extensions
+'ALLOWED_FILE_EXT': ['.html', '.css', '.json', '.js',
+                     '.xml','.svg', '.gif', '.ico',
+                      '.jpeg', '.jpg', '.png', '.ttf',
+                      '.eot', '.otf', '.woff']
+
+# log file path
+'LOG_FILE': None
+
+# compress log by removing unnecessary info from log file
+'LOG_FILE_COMPRESSION': False
+
+# log buffering store log in ram until finished, then write to file
+# Turning it on can reduce task completion time
+'LOG_BUFFERING': True
+
+# log buffer holder for performance speed up
+# Can change this to your preferable cache provider :)
+'LOG_BUFFER_ARRAY': list()
+
+# name of the mirror project
+'PROJECT_NAME': website-name.com
+
+# url to download
+'URL': None
+
+# define the base directory to store all copied sites data
+'MIRRORS_DIR': None
+
+# all downloaded file location
+# available after any project completion
+'DOWNLOADED_FILES': list()
+
+
+# DANGER ZONE
+# CHANGE THESE ON YOUR RESPONSIBILITY
+# NOTE: Do not change unless you know what you're doing
+
+# pattern is used to check file name is supported by os
+# FS, you can also change this to allow files of
+# specific chars
+'FILENAME_VALIDATION_PATTERN': re.compile(r'[*":<>\|\?]+')
+
+# user agent to be shown on requests made to server
+'USER_AGENT' : Mozilla/5.0 (compatible; WebCopyBot/X.X;)
+
+# bypass the robots.txt restrictions
+'BYPASS_ROBOTS' : False
