@@ -11,7 +11,7 @@
 # for speed choose 'html.parser' (will crack some webpages)
 # for exact webpage copy choose 'html5lib' (a little slow)
 # or you can leave it to default 'lxml' (balanced)
-'PARSER' : 'lxml'
+'PARSER' : 'html5lib'
 
 # to download css file or not
 'LOAD_CSS': True
