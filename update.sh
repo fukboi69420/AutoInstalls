@@ -24,7 +24,7 @@ pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -
 
 npm update -g
 
-echo "Fetching Updates..."
+echo "Cleaing up files..."
 
 for i in {1..50}
 do
