@@ -22,3 +22,5 @@ done
 echo "][100%]"
 
 echo "AutoInstalls is now up-to-date!"
+
+ls
