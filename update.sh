@@ -9,30 +9,16 @@ git fetch origin
 
 # Checkout to latest version
 git checkout master
-
-# Pull latest version
-git pull origin master
 #!/bin/bash
 
-echo -ne '⬛⬛⬛⬛                     (10%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛                 (20%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛             (30%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛         (40%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛     (50%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛   (60%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ (70%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛(80%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛(90%)\r'
-sleep 1
-echo -ne '⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛(100%)\r'
-echo -ne '\n'
+echo "Downloading Updates..."
+
+for i in {1..100}
+do
+    echo -ne '∎'
+    sleep 0.05
+done
+
+echo "][100%]"
 
 echo "AutoInstalls is now up-to-date!"
