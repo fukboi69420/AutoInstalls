@@ -1,5 +1,14 @@
 # AutoInstalls
-a set of .sh files to automate installation of programs and run them for you
+
+AutoInstalls is a repository for automated installation scripts for various software and applications. This repository is designed to make the installation process for various programs easier and more efficient. 
+
+The scripts provided in this repository are designed to help users quickly and easily install and configure various programs. The scripts are designed to be run on a Linux operating system, and have been tested on Ubuntu 18.04. 
+
+The repository contains a number of different scripts for various programs, and each script is designed for a specific purpose. For example, one script might be used to install a web server, while another might be used to configure a database.
+
+If you have any questions or need help with the installation scripts provided in this repository, please feel free to open an issue or contact us directly. We are always happy to help and answer any questions that you may have.
+
+Thank you for visiting this repository and we hope that you find it useful!
 # commands
 "sh PROGRAM.sh" and most of the work should be done for you
 or "sudo PROGRAM.sh" for best results, use if commands need root
