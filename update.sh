@@ -1,15 +1,21 @@
 #!/bin/bash
 
-# This script updates the AutoInstalls repository
+# Update AutoInstalls on GitHub
 
-echo "Updating AutoInstalls..."
+echo "Updating AutoInstalls repository on GitHub..."
 
-# Fetch latest version of AutoInstalls
-git fetch origin
+# Change to the directory containing the repository
+cd ~/AutoInstalls
 
-# Checkout to latest version
-git checkout master
-#!/bin/bash
+# Pull the latest version
+git pull
+
+# Update any submodules
+git submodule update --recursive
+
+git config pull.rebase true
+
+echo "AutoInstalls repository successfully updated!"
 
 echo "Downloading Updates..."
 
