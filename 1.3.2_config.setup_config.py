@@ -1,6 +1,3 @@
-# writes the trace output and log file content to console directly
-'DEBUG': False  
-
 # make zip archive of the downloaded content
 'MAKE_ARCHIVE': True
 
