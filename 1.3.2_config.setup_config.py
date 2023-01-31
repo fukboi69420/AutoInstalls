@@ -76,3 +76,54 @@
 
 # bypass the robots.txt restrictions
 'BYPASS_ROBOTS' : False
+
+# run program
+import os
+import re
+
+# set project name
+project_name = PROJECT_NAME
+
+# set url
+url = URL
+
+# set mirrors directory
+mirrors_dir = MIRRORS_DIR
+
+# set user agent
+user_agent = USER_AGENT
+
+# set filename validation pattern
+filename_validation_pattern = FILENAME_VALIDATION_PATTERN
+
+# set parser
+parser = PARSER
+
+# set make archive
+make_archive = MAKE_ARCHIVE
+
+# set clean up
+clean_up = CLEAN_UP
+
+# set load css
+load_css = LOAD_CSS
+
+# set load images
+load_images = LOAD_IMAGES
+
+# set load javascript
+load_javascript = LOAD_JAVASCRIPT
+
+# set copy all
+copy_all = COPY_ALL
+
+# set overwrite
+over_write = OVER_WRITE
+
+# set allowed file extensions
+allowed_file_ext = ALLOWED_FILE_EXT
+
+# set log file
+log_file = LOG_FILE
+
+# set log
