@@ -1,23 +1,30 @@
 #!/bin/bash
 
-# Update AutoInstalls on GitHub
+#AutoInstalls update script
 
-echo "Updating AutoInstalls repository on GitHub..."
+#update repository
 
-# Change to the directory containing the repository
-cd ~/AutoInstalls
-
-# Pull the latest version
+echo "Updating AutoInstalls repository..."
 git pull
 
-# Update any submodules
-git submodule update --recursive
+#update packages
 
-git config pull.rebase true
+echo "Updating packages..."
 
-echo "AutoInstalls repository successfully updated!"
+#update apt packages
 
-echo "Downloading Updates..."
+sudo apt update -y
+sudo apt upgrade -y
+
+#update pip packages
+
+pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
+
+#update npm packages
+
+npm update -g
+
+echo "Fetching Updates..."
 
 for i in {1..50}
 do
