@@ -13,7 +13,7 @@ git checkout master
 
 echo "Downloading Updates..."
 
-for i in {1..100}
+for i in {1..50}
 do
     echo -ne '∎'
     sleep 0.05
