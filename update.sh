@@ -28,7 +28,7 @@ echo "Cleaing up files..."
 
 for i in {1..50}
 do
-    echo -ne '∎'
+    echo -ne '/'
     sleep 0.05
 done
 
