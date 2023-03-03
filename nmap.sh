@@ -1,10 +1,15 @@
 git clone https://github.com/nmap/nmap
+
 cd nmap
+
 ./configure
+
 make
+
 make install
-sudo apt-get install -y nmap
+
+sudo apt install -y nmap
+
+nmap -O scanme.nmap.org
+
 nmap --help
-nmap scanme.nmap.org
-cd nmap
-ls
