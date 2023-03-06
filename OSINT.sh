@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#clone the repo
+#clone nmap repo
 git clone https://github.com/nmap/nmap
 
 #cd
@@ -36,3 +36,18 @@ tar zxvf v4.0.tar.gz
  
  #install requirements
  pip3 install -r requirements.txt
+ 
+ #back to bin
+ cd ..
+ 
+ #clone Infoga rep
+ git clone https://github.com/m4ll0k/Infoga.git
+
+#cd Infoga
+cd Infoga
+
+#install setup
+python setup.py install 
+
+#back to bin
+cd ..
