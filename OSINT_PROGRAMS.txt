@@ -33,6 +33,35 @@ PORT SPECIFICATION AND SCAN ORDER:
   --exclude-ports <port ranges>: Exclude the specified ports from scanning
   -F: Fast mode - Scan fewer ports than the default scan
   -r: Scan ports consecutively - don't randomize
+
+
+Infoga:
+Usage: infoga.py [OPTIONS]
+
+        -d --domain     Target URL/Name
+        -s --source     Source data, default "all":
+
+                all     Use all search engine
+                google  Use google search engine
+                bing    Use bing search engine
+                yahoo   Use yahoo search engine
+                ask     Use ask search engine
+                baidu   Use baidu search engine
+                dogpile Use dogpile search engine
+                exalead Use exalead search engine
+                pgp     Use pgp search engine
+
+        -b --breach     Check if email breached
+        -i --info       Get email informations
+        -r --report     Simple file text report
+        -v --verbose    Verbosity level (1,2 or 3)
+        -H --help       Show this help and exit
+
+Example:
+        infoga.py --domain site.gov -v 3
+        infoga.py --info admin@site.gov -v 3
+        infoga.py --domain site.gov --source pgp --breach -v 1
+        infoga.py --domain site.gov --source google --breach --report site_gov.txt -v 3
   --top-ports <number>: Scan <number> most common ports
   --port-ratio <ratio>: Scan ports more common than <ratio>
 SERVICE/VERSION DETECTION:
@@ -111,3 +140,5 @@ EXAMPLES:
   nmap -v -A scanme.nmap.org
   nmap -v -sn 192.168.0.0/16 10.0.0.0/8
   nmap -v -iR 10000 -Pn -p 80
+  
+  
