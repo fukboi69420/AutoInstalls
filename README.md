@@ -38,10 +38,13 @@ The commands that you are used to automate the installation of programs are:
 pretty simple all you are doing is executing .sh files with sh PROGRAM.sh or chmod +x -> ./PROGRAM.sh
 Chmod is a command that allows you to change the permissions on a file or directory. It can be used to give certain users access to certain files or directories, or to restrict access to certain files or directories.
 
-# Install
-
+# Installation
+```
 git clone https://github.com/fukboi69420/AutoInstalls
 cd AutoInstalls
 chmod +x OSINT.sh rarninja.sh script_generator.sh Tor.sh update.sh
+```
 #temp update file for testing
+```
 chmod +x update2.tst.sh
+```
