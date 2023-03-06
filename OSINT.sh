@@ -19,5 +19,14 @@ sudo apt install -y nmap
 #run nmap scan
 nmap -O scanme.nmap.org
 
-#run nmap commands list
-nmap --help
+ cd
+ 
+ wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
+ 
+ tar zxvf v4.0.tar.gz
+ 
+ rm -rf v4.0.tar.gz 
+ 
+ cd spiderfoot-4.0
+ 
+ pip3 install -r requirements.txt
