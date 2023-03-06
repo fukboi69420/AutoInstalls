@@ -51,3 +51,56 @@ python setup.py install
 
 #back to bin
 cd ..
+
+#clone the repository of nexfil
+git clone https://github.com/thewhiteh4t/nexfil
+
+#cd nexfil
+cd nexfil
+
+#install requirements
+pip3 install -r requirements.txt
+
+#back to bin
+cd ..
+
+# clone the repo
+git clone https://github.com/sherlock-project/sherlock.git
+
+# change the working directory to sherlock
+cd sherlock
+
+# install the requirements
+python3 -m pip install -r requirements.txt
+
+# clone the repo and change directory
+git clone https://github.com/soxoj/maigret && cd maigret
+
+# install the requirements
+python3 -m pip install -r requirements.txt
+
+sudo apt-get update
+
+#Depedning on your Linux distro, you may or may not need these 2 lines
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common
+
+sudo add-apt-repository ppa:mozillateam/ppa -y
+
+sudo apt-get install -y firefox-esr tesseract-ocr git nodejs npm
+
+git clone https://github.com/qeeqbox/social-analyzer.git
+
+cd social-analyzer
+
+npm install
+
+npm install loadash
+
+#git Repository of Investigo
+git clone https://github.com/tdh8316/Investigo.git
+
+#cd Investigo
+cd Investigo
+
+#build from source with go
+go build
