@@ -110,6 +110,9 @@ go build
 #back to bin
 cd
 
+#run as sudo usr
+sudo -s
+
 #update
 apt update
 
@@ -117,7 +120,7 @@ apt update
 apt upgrade
 
 #install git func
-apt install git
+apt install -y git
 
 #clone repo and change dir
 cd && git clone https://github.com/Rajkumrdusad/Tool-X.git
@@ -129,3 +132,5 @@ chmod  +x install.aex
 
 #run install.aex
 sh install.aex
+
+exit
