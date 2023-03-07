@@ -67,16 +67,6 @@ pip install -r requirements.txt
 
 cd ..
 
-cd AutoInstalls
-
-cd Piesint
-
-pip3 install -r reqs.txt
-
-python3 -m pip install -r reqs.txt
-
-python3 Piesint.py
-
 #hopefully this solves all of your problems
 #but before this is finished, install bash programs
 
