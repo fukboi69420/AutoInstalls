@@ -44,7 +44,3 @@ git clone https://github.com/fukboi69420/AutoInstalls
 cd AutoInstalls
 chmod +x --preserve-root OSINT.sh update.sh
 ```
-#temp update file for testing
-```
-chmod +x update2.tst.sh
-```
