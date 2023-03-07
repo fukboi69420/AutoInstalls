@@ -2,6 +2,8 @@
 
 cd ..
 
+cd ..
+
 cd holehe
 
 sudo python3 setup.py install
