@@ -42,7 +42,7 @@ Chmod is a command that allows you to change the permissions on a file or direct
 ```
 git clone https://github.com/fukboi69420/AutoInstalls
 cd AutoInstalls
-chmod +x OSINT.sh rarninja.sh script_generator.sh Tor.sh update.sh
+chmod +x --preserve-root OSINT.sh update.sh
 ```
 #temp update file for testing
 ```
