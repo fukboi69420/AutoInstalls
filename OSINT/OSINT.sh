@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd
+cd ..
+
+cd ..
 
 #clone nmap repo
 git clone https://github.com/nmap/nmap
