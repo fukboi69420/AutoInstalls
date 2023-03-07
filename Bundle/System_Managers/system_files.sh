@@ -3,8 +3,17 @@
 #install bpytop
 sudo apt install bpytop
 
-#install gotop
-https://github.com/xxxserxxx/gotop
+#clone the repo of bashtop
+git clone https://github.com/aristocratos/bashtop.git
+
+#change dir
+cd bashtop
+
+#run install
+sudo make install
+
+#cd back 1
+cd ..
 
 #install required fonts, if not already
 curl -O -L https://raw.githubusercontent.com/xxxserxxx/gotop/master/fonts/Lat15-VGA16-braille.psf
@@ -25,3 +34,15 @@ go build -o gotop \
 -ldflags "-X main.Version=v${VERS} -X main.BuildDate=${DAT}" \
 
 ./cmd/gotop
+
+cd ..
+
+
+
+Echo 
+"To check system file resources run one of these installed programs:
+To run Bpytop => $bpytop
+To run Bashtop => bashtop
+To run gotop => gotop
+to exit out of these programs 'Ctrl C'
+for more information and usage read the OSINT_PROGRAMS_HELP.txt
