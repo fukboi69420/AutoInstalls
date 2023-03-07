@@ -106,3 +106,26 @@ cd Investigo
 
 #build from source with go
 go build
+
+#back to bin
+cd
+
+#update
+apt update
+
+#upgrade
+apt upgrade
+
+#install git func
+apt install git
+
+#clone repo and change dir
+cd && git clone https://github.com/Rajkumrdusad/Tool-X.git
+
+cd Tool-X
+
+#change perms to allow axecutable
+chmod  +x install.aex
+
+#run install.aex
+sh install.aex
