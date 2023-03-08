@@ -1,0 +1,91 @@
+bpytop:
+usage: bpytop.py [-h] [-b BOXES] [-lc] [-v] [--debug]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b BOXES, --boxes BOXES
+                        which boxes to show at start, example: -b "cpu mem net proc"
+  -lc, --low-color      disable truecolor, converts 24-bit colors to 256-color
+  -v, --version         show version info and exit
+  --debug               start with loglevel set to DEBUG overriding value set in config
+  
+  bashtop:
+  USAGE: bashtop
+
+gotop:
+
+CLI options:
+-c, --color=NAME Set a colorscheme.
+-m, --minimal Only show CPU, Mem and Process widgets.
+-r, --rate=RATE Number of times per second to update CPU and Mem widgets [default: 1].
+-V, --version Print version and exit.
+-p, --percpu Show each CPU in the CPU widget.
+-a, --averagecpu Show average CPU in the CPU widget.
+-s, --statusbar Show a statusbar with the time.
+-b, --battery Show battery level widget (minimal turns off). preview -i, --interface=NAME
+
+Menu Keybinds
+Quit: q or <C-c>
+Process navigation
+k and <Up>: up
+j and <Down: down
+<C-u>: half page up
+<C-d>: half page down
+<C-b>: full page up
+<C-f>: full page down
+gg and <Home>: jump to top
+G and <End>: jump to bottom
+Process actions:
+<Tab>: toggle process grouping
+dd: kill selected process or group of processes
+Process sorting
+c: CPU
+m: Mem
+p: PID
+CPU and Mem graph scaling:
+h: scale in
+l: scale out
+?: toggles keybind help menu
+
+gotop:
+Usage: gtop
+
+menu options:
+p: Process Id
+c: CPU usage
+m: Memory usage
+
+If you see question marks or other different characters, try to run it with these environment variables: 
+LANG=en_US.utf8 TERM=xterm-256color gtop
+
+htop Usage:
+htop -[OPTIONS]
+-C --no-color                   Use a monochrome color scheme
+-d --delay=DELAY                Set the delay between updates, in tenths of seconds
+-F --filter=FILTER              Show only the commands matching the given filter
+-h --help                       Print this help screen
+-H --highlight-changes[=DELAY]  Highlight new and old processes
+-M --no-mouse                   Disable the mouse
+-p --pid=PID[,PID,PID...]       Show only the given PIDs
+-s --sort-key=COLUMN            Sort by COLUMN in list view (try --sort-key=help for a list)
+-t --tree                       Show the tree view (can be combined with -s)
+-u --user[=USERNAME]            Show only processes for a given user (or $USER)
+-U --no-unicode                 Do not use unicode but plain ASCII
+-V --version                    Print version info
+
+zenith usage:
+    zenith [FLAGS] [OPTIONS]
+
+FLAGS:
+        --disable-history    Disables history when flag is present
+    -h, --help               Prints help information
+    -V, --version            Prints version information
+
+OPTIONS:
+    -c, --cpu-height <INT>        Min Percent Height of CPU/Memory visualization. [default: 17]
+        --db <STRING>             Database to use, if any. [default: ~/.zenith]
+    -d, --disk-height <INT>       Min Percent Height of Disk visualization. [default: 17]
+    -n, --net-height <INT>        Min Percent Height of Network visualization. [default: 17]
+    -p, --process-height <INT>    Min Percent Height of Process Table. [default: 32]
+    -r, --refresh-rate <INT>      Refresh rate in milliseconds. [default: 2000]
+    -g, --graphics-height <INT>   Min Percent Height of Graphics Card visualization. [default: 17]
