@@ -94,4 +94,4 @@ To Run gtop => $ gtop
 To run htop => $ htop
 To run zenith => $ zenith
 to exit out of these programs 'Ctrl C'
-for more information and usage read the OSINT_PROGRAMS_HELP.txt"
+for more information and usage read the OSINT_PROGRAMS_HELP.txt or type PROGRAM --help"
