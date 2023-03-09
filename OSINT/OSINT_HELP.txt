@@ -34,6 +34,7 @@ PORT SPECIFICATION AND SCAN ORDER:
   -F: Fast mode - Scan fewer ports than the default scan
   -r: Scan ports consecutively - don't randomize
 
+________________________________________________________________________________________________
 
 Infoga:
 Usage: infoga.py [OPTIONS]
@@ -141,6 +142,8 @@ EXAMPLES:
   nmap -v -sn 192.168.0.0/16 10.0.0.0/8
   nmap -v -iR 10000 -Pn -p 80
   
+  ________________________________________________________________________________________________
+  
   Nexfil:
   usage: nexfil.py [-h] [-u U] [-f F] [-l L] [-t T] [-v] [-U] [-pm PM] [-proto PROTO] [-ph PH] [-pp PP]
 
@@ -166,6 +169,8 @@ optional arguments:
                 [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color]
                 [--browse] [--local]
                 USERNAMES [USERNAMES ...]
+
+________________________________________________________________________________________________
 
 Sherlock: Find Usernames Across Social Networks (Version 0.14.2)
 
@@ -204,6 +209,8 @@ optional arguments:
   --no-color            Don't color terminal output
   --browse, -b          Browse to all results on default browser.
   --local, -l           Force the use of the local data.json file.
+  
+  ________________________________________________________________________________________________
   
 Maigret:
 usage: maigret.py [-h] [--version] [--timeout TIMEOUT] [--retries RETRIES] [-n CONNECTIONS] [--no-recursion] [--no-extracting]
@@ -287,6 +294,8 @@ Report formats:
   -P, --pdf             Generate a PDF report (general report on all usernames).
   -G, --graph           Generate a graph report (general report on all usernames).
   -J TYPE, --json TYPE  Generate a JSON report of specific type: simple, ndjson (one report per username).
+  
+  ________________________________________________________________________________________________
   
   SocialAnalyzer:
   Required Arguments:
