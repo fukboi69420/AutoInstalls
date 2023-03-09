@@ -85,8 +85,7 @@ deb-get isntall zenith
 deb-get update
 deb-get upgrade
 
-Echo 
-"To check system file resources run one of these installed programs:
+echo "To check system file resources run one of these installed programs:
 Default run top => $ top
 To run Bpytop => $ bpytop
 To run Bashtop => $ bashtop
