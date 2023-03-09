@@ -1,7 +1,7 @@
 #!bin/bash
 
 #install bpytop
-sudo apt install bpytop
+sudo apt install -y bpytop
 
 #clone the repo of bashtop
 git clone https://github.com/aristocratos/bashtop.git
@@ -41,7 +41,7 @@ cd ..
 npm install gtop -g
 
 #install Node
-sudo apt install node
+sudo apt install -y node
 
 #check vers
 node --version
