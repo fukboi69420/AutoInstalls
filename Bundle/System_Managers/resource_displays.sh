@@ -87,6 +87,7 @@ deb-get upgrade
 
 Echo 
 "To check system file resources run one of these installed programs:
+Default run top => $ top
 To run Bpytop => $ bpytop
 To run Bashtop => $ bashtop
 To run gotop => $ gotop
